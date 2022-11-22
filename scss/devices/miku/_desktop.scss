@@ -1,0 +1,95 @@
+main {
+    row-gap: 10vh;
+
+    > a {
+        height: 11vh;
+        width: 13vh;
+    }
+}
+
+h3 {
+    font-size: $h3FontSizeDesktop;
+}
+
+p {
+    font-size: $pFontSizeDesktop;
+}
+
+.anime {
+
+    width: 80%;
+    row-gap: 5vh;
+
+    > section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h4 {
+        font-size: 30px;
+        width: 100%;
+    }
+}
+
+.tvshow {
+    width: 80%;
+
+    > figure {
+        width: 21%;
+    }
+}
+
+.recommendation {
+    width: 80%;
+}
+
+.streaming {
+
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+
+    > section {
+        width: 70%;
+    }
+
+    > article {
+        width: 20%;
+        
+        > a {
+            width: 100%;
+        }
+    }
+
+    
+}
+
+.vs {
+
+    > h3 {
+        padding: 2%;
+        border-radius: 50px;
+        width: 76%;
+    }
+
+    > p {
+        width: 80%;
+    }
+
+    > section {
+        width: 80%;
+        padding-bottom: 7vh;
+    }
+
+    > article {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
