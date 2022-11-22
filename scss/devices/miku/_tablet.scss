@@ -1,0 +1,65 @@
+main > a {
+    height: 7vh;
+    width: 9vh;
+}
+
+
+.anime {
+    
+    > section {
+        width: 90%;
+        flex-direction: row;
+
+        p {
+            text-align: justify;
+        }
+    }
+    
+}
+
+.tvshow {
+
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    > h3 {
+        width: 100%;
+    }
+
+    > figure {
+        width: 37%;
+
+        > img {
+            height: 18vh;
+        }
+    }
+}
+
+.recommendation {
+
+    > section {
+        
+        > article {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        aside {
+            width: 30%;
+        }
+    }
+}
+
+.vs {
+
+    > section {
+        flex-direction: row;
+        justify-content: space-between;
+
+        > article {
+            width: 37%;
+        }
+    }
+}
