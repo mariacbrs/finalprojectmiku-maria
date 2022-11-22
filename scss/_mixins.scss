@@ -1,0 +1,33 @@
+@mixin directionColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexGap($flexDirection,$columnGap,$rowGap){
+    display: flex;
+    flex-direction: $flexDirection;
+    column-gap: $columnGap;
+    row-gap: $rowGap;
+ }
+
+ @mixin flexAxisGap(
+   $flexDirection : row,
+   $xAxis         : center,
+   $yAxis         : center,
+   $columnGap     : 0,
+   $rowGap        : 0
+) {
+   display: flex;
+   flex-direction: $flexDirection;
+   justify-content: $xAxis;
+   align-items: $yAxis;
+   column-gap: $columnGap;
+   row-gap: $rowGap;
+}
+
+@mixin background($url) {
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
