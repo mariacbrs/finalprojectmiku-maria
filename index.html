@@ -10,12 +10,180 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav></nav>
-    <header></header>
+    <!-- NAVIGATION START -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#miku">TV Shows</a></li>
+            <li><a href="#maria">Movies</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <details>
+            <summary class="fa-solid fa-bars"></summary>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#miku">TV Shows</a></li>
+                <li><a href="#maria">Movies</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </details>
+    </nav>
+    <!-- NAVGATION ENDS -->
+    <!-- HEADER START -->
+    <header>
+        <article>
+            <h1>Cinema Website</h1>
+            <p>Hello everyone, this is Miku and Maria we hope you enjoy our website.</p>
+        </article>
+    </header>
+    <!-- HEADER ENDS -->
+    <!-- MAIN START -->
+    <main>
+        <!-- ABOUT  -->
+        <section class="about" id="about">
+            <section class="history">
+                <article>
+                    <h2>History of cinematic industry</h2>
+                    <span></span>
+                </article>
+                <article>
+                    <p></p>
+                    <aside>
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </aside>
+                </article>
+            </section>
+            <section class="vc">
+                <article>
+                    <h3>Vancouver and Cinema</h3>
+                    <p></p>
+                </article>
+                <article>
+                    <ul>
+                        <li>
+                            <small>2021 5B</small>
+                        </li>
+                        <li>
+                            <small>2020 3.5B</small>
+                        </li>
+                        <li>
+                            <small>2019 4.1B</small>
+                        </li>
+                        <li>
+                            <small>2018 3.8B</small>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+        <!-- MIKU -->
+        <section class="miku" id="miku"></section>
+        <!-- MARIA -->
+        <section class="maria" id="maria"></section>
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <form action="thankyou.html" method="post">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <article>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Full Name">
+                        <label for="aside">Gender:</label>
+                        <aside name="aside" id="aside">
+                            <label for="female"><input type="radio" name="gender" id="female">Female</label>
+                            <label for="male"><input type="radio" name="gender" id="male">Male</label>
+                            <label for="none"><input type="radio" name="gender" id="none">Prefer not to say</label>
+                        </aside>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Email">
+                        <label for="tel"> Phone:</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Enter Number">
+                        <label for="select">Canadian Province</label>
+                        <select name="select" id="select">
+                            <option value="" disabled selected ></option>
+                            <option value="BC">BC</option>
+                            <option value="NL">NL</option>
+                            <option value="AB">AB</option>
+                            <option value="SK">SK</option>
+                            <option value="PE">PE</option>
+                            <option value="MB">MB</option>
+                            <option value="NB">NB</option>
+                            <option value="NS">NS</option>
+                            <option value="QC">QC</option>
+                            <option value="ON">ON</option>
+                        </select>
+                    </article>
+                </fieldset>
+                <fieldset>
+                    <legend>You and Cinema</legend>
+                    <article>
+                        <label for="cbox">Favorite TV Show:</label>
+                        <section name="cbox" id="cbox">
+                            <aside>
+                                <input type="checkbox" name="sitcom" id="sitcom">
+                                <label for="sitcom">Sitcom</label>
+                                <input type="checkbox" name="documentary" id="documentary">
+                                <label for="documentary">Documentary</label>
+                                <input type="checkbox" name="soapopera" id="soapopera">
+                                <label for="soapopera">Soap Opera</label>
+                            </aside>
+                            <aside>
+                                <input type="checkbox" name="talkshow" id="talkshow">
+                                <label for="talkshow">Talk Show</label>
+                                <input type="checkbox" name="cookeryprogram" id="cookeryprogram">
+                                <label for="cookeryprogram">Cookery Program</label>
+                                <input type="checkbox" name="news" id="news">
+                                <label for="news">News</label>
+                            </aside>
+                        </section>
+                        <label for="movie">Favorite Movie:</label>
+                        <section name="movie" id="movie">
+                            <aside>
+                                <input type="checkbox" name="action" id="action">
+                                <label for="action">Action</label>
+                                <input type="checkbox" name="comedies" id="comedies">
+                                <label for="comedies">Comedies</label>
+                                <input type="checkbox" name="romantic" id="romantic">
+                                <label for="romantic">Romantic</label>
+                            </aside>
+                            <aside>
+                                <input type="checkbox" name="musicals" id="musicals">
+                                <label for="musicals">Musicals</label>
+                                <input type="checkbox" name="adventure" id="adventure">
+                                <label for="adventure">Adventure</label>
+                                <input type="checkbox" name="drama" id="drama">
+                                <label for="drama">Drama</label>
+                            </aside>
+                        </section>
+                        <label for="message">Why you love cinema:</label>
+                        <textarea name="message" id="message"></textarea>
+                        <aside>
+                            <input type="checkbox" name="subscribe" id="subscribe">
+                            <label for="subscribe">Subscribe for emails</label>
+                        </aside>
+                    </article>
+                </fieldset>
+                <input type="">
+            </form>
+        </section>        
+    </main>
+    <!-- MAIN ENDS -->
+    <!-- FOOTER START -->
+    <footer>
 
-    <main></main>
-
-    <footer></footer>
-    
+    </footer>
 </body>
 </html>
