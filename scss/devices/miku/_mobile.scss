@@ -1,0 +1,252 @@
+h3 {
+    font-size: $h3FontSizeMobile;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+}
+
+main {
+    row-gap: 5vh;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.anime {
+    row-gap: 3vh;
+    align-items: center;
+
+    > section,
+    > section > article {
+        @include flexAxisGap(column, center, center, 0, 2vh);
+    }
+
+    h2 {
+        @include flexAxisGap(row, center, center);
+        background-color: $defaultOrange;
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+        border-radius: 50%;
+        height: 10vh;
+        width: 10vh;
+        padding: 10%;
+    }
+
+    p {
+        width: 90%;
+        line-height: 1.5
+    }
+
+    h4 {
+        font-family: 'Archivo Black', sans-serif;
+        @include background("/img/bg-h4.jpg");
+        width: 90%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    h4 > span {
+        font-family: 'Archivo Black', sans-serif;
+        color: $defaultBlue;
+    }
+
+}
+
+.tvshow {
+    row-gap: 3vh;
+    align-items: center;
+
+    figure {
+        width: 80%;
+        @include flexAxisGap(column, center, center, 0, 2vh);
+        border: 2px solid $defaultBlue;
+        padding: 5%;
+        box-shadow: 5px 5px 0px 0 $defaultBlue;
+
+        > img {
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        > figcaption {
+            @include directionColumn;
+            row-gap: 1vh;
+        }
+
+        h5 {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        p {
+            line-height: 1.3;
+        }
+    }
+}
+
+.recommendation {
+    width: 90%;
+    row-gap: 3vh;
+
+    > section {
+        width: 90%;
+        padding: 5%;
+        background-color: $defaultYellow;
+        @include directionColumn;
+        row-gap: 2vh;
+
+        > h5 {
+            font-size: 18px;
+            color: firebrick;
+        }
+
+        > article {
+            @include directionColumn;
+            row-gap: 2vh;
+        }
+
+        aside {
+            @include directionColumn;
+            row-gap: 1vh;
+        }
+
+        h6 {
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-position: inside;
+        }
+
+    }
+
+    
+    
+}
+
+.streaming {
+    row-gap: 3vh;
+    align-items: center;
+    background-color: $defaultGreen;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    > section {
+        width: 90%;
+        @include directionColumn;
+        row-gap: 2vh;
+
+        h3, p {
+            color: white;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    }
+
+    article {
+        width: 90%;
+        @include flexAxisGap (row, space-between, normal, 0, 2vh);
+        flex-wrap: wrap;
+
+        a {
+            width: 40%;
+            text-align: center;
+            color: white;
+            padding: 3%;
+            border: 2px solid white;
+        }
+    } 
+}
+
+.vs {
+    row-gap: 3vh;
+    align-items: center;
+    width: 100%;
+
+    > h3 {
+        width: 80%;
+        background-color: $defaultYellow;
+        padding: 5%;
+        border-radius: 20px;
+
+        > span {
+            font-family: 'Archivo Black', sans-serif;
+            color: $defaultOrange;
+        }
+    }
+
+    > p {
+        width: 90%;
+        line-height: 1.5;
+    }
+
+    > section {
+        @include directionColumn;
+        row-gap: 2vh;
+        width: 90%;
+
+        > article {
+            @include directionColumn;
+            row-gap: 1vh;
+            border: 2px solid $defaultOrange;
+            box-shadow: 5px 5px 0px 0 $defaultOrange;
+            padding: 5%;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding-left: 10%;
+        }
+
+        i {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+    }
+
+    > article {
+        @include flexAxisGap (column, normal, center, 0, 2vh);
+        background-color: $defaultBlue;
+        width: 90%;
+        padding: 5%;
+
+        > h3,p {
+            color: white;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    }
+}
+
+main > a {
+    @include flexAxisGap(column, center, center);
+    width: 12vh;
+    height: 10vh;
+    background-color: $defaultOrange;
+    border-radius: 50%;
+    padding-bottom: 2vh;
+
+    i, span {
+        color: white;
+    }
+
+    i {
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+}
