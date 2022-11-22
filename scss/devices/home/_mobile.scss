@@ -1,0 +1,119 @@
+img{
+    width: 30%;
+}
+
+.history,
+.maria,
+.contact,
+.vc,
+.miku{
+    
+
+    h2 {
+        font-size: 20px;
+    }
+
+    > article > span{
+        width: 60%;
+    }    
+}
+
+nav{
+    display: flex;
+    // justify-content: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: $homepageGray;
+    // position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+    summary{
+        font-size: 28px;
+    }
+    
+    > details{
+        width: 95%;
+        padding-left:5%;
+        text-align: center;
+
+        > ul{
+            position: absolute;
+            width: 88%;
+            margin-top: 1vh;
+            background-color: $homepageGray2;
+            @include directionColumn;
+            list-style-type: none;
+        }
+        
+        li{
+            padding: 2%;
+            display: flex;
+            width: 96%; 
+            text-align: left;
+            border-bottom: 1px solid $homepageBlack;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            width: 100%;
+        }
+
+    
+    }
+
+    > ul{
+        display:none;
+    }
+}
+
+// header
+
+header{
+    display: flex;
+    height: 25vh;
+    position: relative;
+
+    h1{
+        font-size: 35px;
+        color: white;
+    }
+
+    > video{
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;    
+    }
+
+    > article{
+        position: absolute;
+        @include directionColumn;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.536);
+
+        > p{
+            width: 80%;
+            color: $homepageGray2;
+            font-size: 14px;
+        }
+    }
+}
+
+// main
+
+main{
+    width: 90%;
+    padding-left: 5%;
+}
+
+// about
+
+.history{
+
+}
+
