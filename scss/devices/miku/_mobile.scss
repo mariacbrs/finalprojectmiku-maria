@@ -1,6 +1,5 @@
 h3 {
     font-size: $h3FontSizeMobile;
-    font-family: 'Archivo Black', sans-serif;
     text-align: center;
 }
 
@@ -38,7 +37,6 @@ main {
     }
 
     h4 {
-        font-family: 'Archivo Black', sans-serif;
         @include background("/img/bg-h4.jpg");
         width: 90%;
         padding-top: 5%;
@@ -48,7 +46,6 @@ main {
     }
 
     h4 > span {
-        font-family: 'Archivo Black', sans-serif;
         color: $mikuBlue;
     }
 
@@ -177,7 +174,6 @@ main {
         border-radius: 20px;
 
         > span {
-            font-family: 'Archivo Black', sans-serif;
             color: $mikuOrange;
         }
     }
