@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+$normalFont: 'Archivo', sans-serif;
+$h3Font: 'Archivo Black', sans-serif;
 $h3FontSizeDesktop: 35px;
 $h3FontSizeTablet: 30px;
 $h3FontSizeMobile: 22px;
@@ -14,6 +18,10 @@ $homepageRed3: #ba181b;
 $homepageGray: #b1a7a6;
 $homepageGray2: #d3d3d3;
 $homepageLightgray: #f5f3f4;
+$mikuOrange: #eb5a3b;
+$mikuBlue: #105b8d;
+$mikuGreen: #166e55;
+$mikuYellow: #dcaf3b;
 $mobileSize: 200px;
 $tabletSize: 600px;
 $desktopSize: 1000px;
