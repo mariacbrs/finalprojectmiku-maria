@@ -16,7 +16,6 @@
 
 nav{
     display: flex;
-    // justify-content: center;
     padding-top: 1vh;
     padding-bottom: 1vh;
     background-color: $homepageGray;
@@ -90,6 +89,7 @@ header{
         justify-content: center;
         text-align: center;
         height: 93%;
+        width: 100%;
         align-items: center;
         background-color: rgba(128, 128, 128, 0.536);
 
@@ -112,22 +112,26 @@ main{
 
 // about
 
+
 .miku,
 .maria {
-    > span{
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-    }
-
     a{
         background-color: $homepageRed2;
         color: white;
         text-decoration: none;
         padding: 2%;
-        text-transform: uppercase
+        text-transform: uppercase;
+    }   
+}
+
+form,
+.miku,
+.maria{
+    > span{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
     }
-    
 }
 
 .about{
@@ -217,6 +221,7 @@ main{
 
         p {
             width: 80%;
+            color: white;
         }
     }
 
@@ -239,10 +244,7 @@ main{
     figure:nth-child(4) {
         @include background("/img/tvshow.jpg");
     }
-
-    
-
-    
+ 
 }
 
 // maria
@@ -271,22 +273,23 @@ main{
             border-radius: 50%;
         }
         
-        > figcaption{
-            @include directionColumn;
-            row-gap: 1vh;
-            text-align: center;
-            padding-bottom: 1vh;
+    }
 
-           > h4{
-             color: $homepageRed3; 
-           }
-           
-           > p{
-            width: 90%;
-            padding-left: 5%;
-            line-height: 1.3;
-           }
-        }
+    figcaption{
+       @include directionColumn;
+       row-gap: 1vh;
+       text-align: center;
+       padding-bottom: 1vh;
+
+      > h4{
+        color: $homepageRed3; 
+      }
+      
+      > p{
+       width: 90%;
+       padding-left: 5%;
+       line-height: 1.3;
+      }
     }
 }
 
@@ -296,6 +299,7 @@ form{
     @include directionColumn;
     row-gap: 3vh;
     padding-top: 2vh;
+    width: 100%;
 
     
     > fieldset{
@@ -307,10 +311,15 @@ form{
             text-align: center;
         }
 
-        input{
+        input, textarea{
             height: 3vh;
             border: 1px solid $homepageRed2;
             border-radius: 3px;
+        }
+
+        textarea{
+            resize: none;
+            height: 15vh;
         }
 
         select{
@@ -319,28 +328,29 @@ form{
             height: 3vh;
             background-color: $homepageLightgray;
         }
-
-        aside{
-            display: flex;
-
-            > label{
-                display: flex;
-                width: 33%;
-                column-gap: 1vh;
-                align-items: center;
-            }
-
-            span{
-                display: flex;
-                column-gap: 1vh;
-                align-items: center
-            }
-        }
-
+ 
         section{
             display: flex;
             flex-wrap: wrap;
             width: 100%;
+        }
+    }
+    
+    aside{
+        @include directionColumn;
+        row-gap: 1vh;
+
+        > label{
+            display: flex;
+            width: 33%;
+            column-gap: 1vh;
+            align-items: center;
+        }
+
+        span{
+            display: flex;
+            column-gap: 1vh;
+            align-items: center;
         }
     }
 
@@ -350,6 +360,25 @@ form{
         
         p, > label{
             color: $homepageRed;
+        }
+
+        > span{
+            display: flex;
+            align-items: center;
+            column-gap: 1vh;
+        }
+    }
+
+    > span{
+        height: 4vh;
+
+        input{
+            background-color: $homepageRed2;
+            color: white;
+            text-decoration: none;
+            padding: 2%;
+            text-transform: uppercase;
+            border: none;
         }
     }
 }
