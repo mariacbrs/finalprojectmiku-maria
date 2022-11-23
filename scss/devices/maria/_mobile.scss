@@ -1,0 +1,54 @@
+nav {
+    background-color: $mariared2;
+    position:fixed;
+}
+
+header{
+    background-image: url(/img/cinema.maria.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1{
+        color: $mariared3;
+    }
+
+    article{
+        > p{
+            color: white;
+        }
+    }
+}
+
+.movies,
+.moviments,
+.oscars,
+.palm,
+.actors{
+    @include directionColumn;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    > aside{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1vh;
+        padding-bottom: 1vh;
+
+        > h2{
+            color: $mariablack2;
+            font-weight: 500;
+        }
+
+        > span{
+            display: block;
+            height: 2px;
+            width: 50%;
+            background-color: $mariared1;
+        }
+    } 
+}     
+
+
