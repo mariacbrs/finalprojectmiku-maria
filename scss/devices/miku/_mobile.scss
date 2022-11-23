@@ -1,15 +1,17 @@
 nav{
     display: flex;
     // justify-content: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    background-color: $homepageGray;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    background-color: $mikuGreen;
     position: fixed;
     width: 100%;
     z-index: 1;
     
     summary{
         font-size: 28px;
+        color: white;
     }
     
     > details{
@@ -20,7 +22,7 @@ nav{
         > ul{
             position: absolute;
             width: 88%;
-            margin-top: 1vh;
+            margin-top: 2vh;
             background-color: $homepageGray2;
             @include directionColumn;
             list-style-type: none;
@@ -32,6 +34,10 @@ nav{
             width: 96%; 
             text-align: left;
             border-bottom: 1px solid $homepageBlack;
+        }
+
+        li:last-child {
+            border-bottom: none;
         }
 
         a{
@@ -52,7 +58,7 @@ nav{
 // header
 
 header{
-    padding-top: 2vh;
+    padding-top: 5vh;
     display: flex;
     height: 25vh;
     position: relative;
@@ -73,7 +79,8 @@ header{
         @include directionColumn;
         justify-content: center;
         text-align: center;
-        height: 93%;
+        height: 25vh;
+        width: 100%;
         align-items: center;
         background-color: rgba(128, 128, 128, 0.536);
 
@@ -315,11 +322,10 @@ main {
 
 main > a {
     @include flexAxisGap(column, center, center);
-    width: 12vh;
-    height: 10vh;
+    width: 7vh;
+    height: 7vh;
     background-color: $mikuOrange;
     border-radius: 50%;
-    padding-bottom: 2vh;
 
     i, span {
         color: white;
@@ -329,7 +335,15 @@ main > a {
         font-size: 18px;
     }
 
-    span {
-        font-size: 12px;
-    }
+}
+
+footer{
+    background-color: $mikuGreen;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    @include directionColumn;
+    row-gap: 2vh;
 }
