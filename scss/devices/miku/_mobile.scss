@@ -284,17 +284,29 @@ main {
         row-gap: 2vh;
         width: 90%;
 
+        h4 {
+            font-size: 24px;
+        }
+
         > article {
             @include directionColumn;
-            row-gap: 1vh;
+            row-gap: 2vh;
             border: 2px solid $mikuOrange;
             box-shadow: 5px 5px 0px 0 $mikuOrange;
             padding: 5%;
         }
 
+        aside {
+            @include directionColumn;
+            row-gap: 1.5vh;
+
+        }
+
         ul {
             list-style-position: inside;
             padding-left: 10%;
+            @include directionColumn;
+            row-gap: 1vh;
         }
 
         i {
