@@ -47,8 +47,8 @@ nav {
     position:fixed;
 
     > details{
-        padding-left: 0;
         > summary{
+            padding-left: 0;
             text-align: center;
         }
     }
@@ -186,11 +186,19 @@ header{
 // actors
 
 .actors{
+    @include directionColumn;
+    row-gap: 2vh;
     width: 90%;
     padding-left: 5%;
 
+    > article{
+        @include directionColumn;
+        row-gap: 2vh;
+    }
+
     figure{
         border: 2px solid gray;
+        background-color:$homepageLightgray;
         border-radius: 6px;
 
         > img{
@@ -199,17 +207,17 @@ header{
         }
     }
 
-
     figcaption{
         padding-top: 2vh;
         @include directionColumn;
         row-gap: 1vh;
         width: 95%;
         padding-left: 4%;
+        padding-bottom: 2vh;
         text-align: center;
 
         > p{
-            color: $mariared1;
+            color: $mariared2;
             font-size: 16px;
             text-align: left;
         }
@@ -217,9 +225,44 @@ header{
         > h4{
             font-weight: 800;
             font-size: 18px;
-            color: $maria;
+            color: $mariablack;
         }
     } 
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(236, 236, 236);
+
+        li{
+            list-style-position: inside;
+            padding: 2%;
+            padding-right: 0;
+            width: 45%;
+            list-style-type:none;
+        }  
+        
+        span{
+            color: $mariayellow;
+        }
+    }
+
+    a{
+        color: $mariayellow;
+    }
+}
+
+// footer
+
+footer{
+    background-color: $mariared2;
+    
+    >p{
+        color: white;
+        font-weight: 600;
+    }
+
 }
 
 
