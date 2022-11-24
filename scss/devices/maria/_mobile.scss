@@ -74,10 +74,11 @@ header{
 .movies {
     @include directionColumn;
     row-gap: 2vh;
+    width: 90%;
+    padding-left: 5%;
 
     > article{
-        width: 90%;
-        padding-left: 5%;
+        
         @include directionColumn;
         row-gap: 2vh;
         

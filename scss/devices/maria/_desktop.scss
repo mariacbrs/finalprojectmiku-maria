@@ -1,4 +1,21 @@
 
+.movies,
+.movements,
+.oscars,
+.palm,
+.actors{
+    row-gap: 5vh;
+    > aside{
+        > span{
+            display: block;
+            height: 3px;
+            width: 65%;
+        }
+    } 
+}
+
+
+
 // NAV
 nav {
     height: 8vh;
@@ -63,11 +80,13 @@ header{
             font-size: 20px;
         }
     }
-
-
 }
 
 // main
+
+main{
+    row-gap: 8vh;
+}
 
 .movies,
 .movements,
@@ -85,19 +104,129 @@ header{
 
 .gallery{
     > figure{
-        width: 22vh;
-        height: 16vh;
+        width: 31vh;
+        height: 14vh;
     }
 }
 
 .movies > article{
+    justify-content: center;
     align-items: center;
-
     > p{
-        font-size: 16px;
+        font-size: 17px;
         line-height: 1.5;
+        width: 50%;
     }    
+
+    > figure{
+        height: 40vh;
+    }
 }
 
+// movements
+
+.movements{
+    > p{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    figure{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        >img{
+            width: 50%;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+    
+        >figcaption{
+            @include directionColumn;
+            justify-content: center;
+            text-align: center;
+            row-gap: 2vh;
+            width: 48%;
+            padding: 0;
+            padding-left: 1%;
+        }
+
+        h3{
+            font-size: 22px;
+        }
 
 
+        p{
+            font-size: 16px;
+            text-align: center;
+        }
+    }   
+}
+
+// palm and oscars 
+
+.oscars,
+.palm{
+
+    > article{
+      align-items: center;
+      row-gap: 4vh;
+    }
+
+    ul{
+        width: 50%;
+
+    }
+
+    li{
+       width: 80%;
+       padding-left: 10%;
+       justify-content: space-between;
+    }
+}
+
+// actors
+
+.actors{
+
+   > article{
+      row-gap: 3vh;
+      align-items: center;
+    }
+
+     figure{
+        width: 60%;
+    }
+
+    ul{
+        width: 50%;
+    }
+
+    a{
+        transition: .4s;
+    }
+
+    a:hover{
+        color: black;
+    }
+}
+
+// footer
+
+footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    justify-content: space-between;
+
+    > a {
+        height: 16vh;
+        width: 16vh;
+    }
+
+    > p {
+        font-size: 20px;
+    }
+}
