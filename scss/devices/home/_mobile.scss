@@ -28,13 +28,14 @@ nav{
     }
     
     > details{
-        width: 95%;
+        width: 90%;
         padding-left:5%;
+        padding-right: 5%;
         text-align: center;
 
         > ul{
             position: absolute;
-            width: 88%;
+            width: 90%;
             margin-top: 1vh;
             background-color: $homepageGray2;
             @include directionColumn;
@@ -67,7 +68,7 @@ nav{
 // header
 
 header{
-    padding-top: 2vh;
+    padding-top: 5vh;
     display: flex;
     height: 25vh;
     position: relative;
@@ -88,7 +89,7 @@ header{
         @include directionColumn;
         justify-content: center;
         text-align: center;
-        height: 93%;
+        height: 83.5%;
         width: 100%;
         align-items: center;
         background-color: rgba(128, 128, 128, 0.536);
@@ -226,7 +227,7 @@ form,
     }
 
     figure {
-        height: 20vh;
+        height: 30vh;
     }
 
     figure:nth-child(1) {
