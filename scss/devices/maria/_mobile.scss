@@ -30,7 +30,7 @@ p{
             display: block;
             height: 3px;
             width: 85%;
-            // background-color: $mariared1;
+            background-color: $homepageRed;
             border-radius: 6px;
         }
     } 
@@ -244,9 +244,9 @@ header{
         // }
     }
 
-    // a{
-    //     color: $mariayellow;
-    // }
+    a{
+        color: $homepageRed2;
+    }
 }
 
 // footer
