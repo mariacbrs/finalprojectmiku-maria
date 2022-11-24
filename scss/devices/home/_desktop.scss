@@ -1,0 +1,272 @@
+.history,
+.maria,
+.miku,
+.contact,
+.vc {
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+
+
+nav {
+    height: 8vh;
+    padding: 0;
+
+    > details {
+        display: none;
+    }
+
+    > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        width: 100%;
+        height: 100%;
+
+        > li {
+            display: flex;
+            width: 15%;
+            height: 100%;
+            text-align: center;
+            border-right: 1px solid white;
+        }
+
+        > li:first-child {
+            border-left: 1px solid white;
+        }
+
+        a {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            color: white;
+            transition: .4s;
+        }
+
+        a:hover {
+            background-color: $homepageGray2;
+            color: $homepageGray;
+        }
+    }
+}
+
+header {
+    height: 45vh;
+
+    > article {
+        height: 92%;
+
+        h1 {
+            font-size: 45px;
+        }
+    
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+    }    
+}
+
+main {
+    row-gap: 7vh;
+}
+
+.about {
+    row-gap: 7vh;
+}
+
+.history {
+    row-gap: 5vh;
+
+    p {
+        width: 96%;
+    }
+
+    > article {
+        row-gap: 5vh;
+    }
+
+    aside {
+
+        > figure {
+            width: 30%;
+        }
+    }   
+}
+
+.vc {
+    row-gap: 5vh;
+}
+
+.miku {
+    > article:nth-child(3) {
+        justify-content: space-evenly;
+        row-gap: 5vh;
+    }
+
+    figcaption {
+        display: none;
+
+        > h3 {
+            font-size: 24px;
+        }
+
+        > p {
+            font-size: 18px;
+        } 
+    }
+
+    span {
+        width: 93%;
+        height: 5vh;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        padding-left: 2%;
+        padding-right: 2%;
+
+        &:hover {
+            background-color: white;
+            color: $homepageRed;
+            border: 1px solid $homepageRed;
+        }
+    }
+
+    figure:hover > figcaption {
+        cursor: pointer;
+        display: flex;
+    }
+}
+
+.maria {
+    row-gap: 4vh;
+
+    p {
+        width: 96%;
+        font-size: 20px;
+    }
+
+    aside {
+        figure {
+            width: 30%;
+        }
+    }
+
+    figure {
+        > img {
+            width: 40vh;
+            height: 40vh;
+        }
+    }
+
+    figcaption {
+        row-gap: 2vh;
+
+        > p {
+            width: 85%;
+            padding-left: 9%;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        > h4 {
+            font-size: 20px;
+        }
+    }
+
+    span {
+        width: 96%;
+        height: 5vh;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        padding-left: 2%;
+        padding-right: 2%;
+
+        &:hover {
+            background-color: white;
+            color: $homepageRed;
+            border: 1px solid $homepageRed;
+        }
+    }
+}
+
+
+form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    > fieldset {
+        width: 40%;
+    }
+
+    input,
+    select {
+        height: 5vh;
+    }
+
+    textarea {
+        height: 20vh;
+    }
+
+    aside {
+        row-gap: 2vh;
+    }
+
+    article {
+        row-gap: 2vh;
+    }
+
+    legend {
+        font-size: 22px;
+    }
+
+    > span{
+        width: 100%;
+        padding-bottom: 2vh;
+
+        input {
+            height: 7vh;
+            font-size: 20px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        > input:hover {
+            background-color: white;
+            color: $homepageRed;
+            border: 1px solid $homepageRed;
+        }
+    }
+}
+
+footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    justify-content: space-between;
+
+    > a {
+        height: 20vh;
+        width: 20vh;
+    }
+
+    > p {
+        font-size: 20px;
+    }
+}
+
