@@ -1,9 +1,5 @@
-*{
-    font-family: 'Playfair Display', serif;
-}
 
 p{
-    color: $mariared3;
     text-align: justify;
 }
 
@@ -25,7 +21,7 @@ p{
         padding-bottom: 1vh;
 
         > h2{
-            color: $mariablack2;
+            // color: $mariablack2;
             font-weight: 500;
             font-size: 30px;
         }
@@ -34,7 +30,7 @@ p{
             display: block;
             height: 3px;
             width: 85%;
-            background-color: $mariared1;
+            // background-color: $mariared1;
             border-radius: 6px;
         }
     } 
@@ -43,7 +39,7 @@ p{
 // nav
 
 nav {
-    background-color: $mariared2;
+    // background-color: $mariared2;
     position:fixed;
 
     > details{
@@ -62,16 +58,16 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 
-    h1{
-        color: white;
-    }
+    // h1{
+    //     color: white;
+    // }
 
     article{
-        background-color: rgba(128, 128, 128, 0.705);
+        // background-color: rgba(128, 128, 128, 0.705);
         row-gap: 2vh;
 
         > p{
-            color: red;
+            // color: red;
             font-weight: 500;
         }
     }
@@ -112,7 +108,7 @@ header{
     figure{
         @include directionColumn;
         row-gap: 2vh;
-        background-color: lightgray;
+        // background-color: lightgray;
         border-radius: 6px;
         
         >img{
@@ -131,7 +127,7 @@ header{
         text-align: center;
 
         > p{
-            color: $mariared2;
+            // color: $mariared2;
             font-size: 16px;
             text-align: left;
         }
@@ -139,7 +135,7 @@ header{
         > h3{
             font-weight: 800;
             font-size: 18px;
-            color: $mariablack2;
+            // color: $mariablack2;
         }
     }
 
@@ -165,7 +161,7 @@ header{
 
     ul{
         text-align: center;
-        background-color: rgb(236, 236, 236);
+        // background-color: rgb(236, 236, 236);
     }
 
     li{
@@ -176,9 +172,9 @@ header{
         font-weight: 500;
         font-size: 14px;
 
-        > span{
-            color: $mariayellow;
-        }
+        // > span{
+        //     color: $mariayellow;
+        // }
       
     }
 }
@@ -198,7 +194,7 @@ header{
 
     figure{
         border: 2px solid gray;
-        background-color:$homepageLightgray;
+        // background-color:$homepageLightgray;
         border-radius: 6px;
 
         > img{
@@ -217,7 +213,7 @@ header{
         text-align: center;
 
         > p{
-            color: $mariared2;
+            // color: $mariared2;
             font-size: 16px;
             text-align: left;
         }
@@ -225,7 +221,7 @@ header{
         > h4{
             font-weight: 800;
             font-size: 18px;
-            color: $mariablack;
+            // color: $mariablack;
         }
     } 
 
@@ -233,7 +229,7 @@ header{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background-color: rgb(236, 236, 236);
+        // background-color: rgb(236, 236, 236);
 
         li{
             list-style-position: inside;
@@ -243,23 +239,21 @@ header{
             list-style-type:none;
         }  
         
-        span{
-            color: $mariayellow;
-        }
+        // span{
+        //     color: $mariayellow;
+        // }
     }
 
-    a{
-        color: $mariayellow;
-    }
+    // a{
+    //     color: $mariayellow;
+    // }
 }
 
 // footer
 
 footer{
-    background-color: $mariared2;
     
-    >p{
-        color: white;
+    > p{
         font-weight: 600;
     }
 
