@@ -9,6 +9,10 @@
     }
 }
 
+p{
+    font-size:20px;
+}
+
 
 
 nav {
@@ -52,7 +56,7 @@ nav {
 
         a:hover {
             background-color: $homepageGray2;
-            color: $homepageGray;
+            color: $homepageRed;
         }
     }
 }
@@ -85,9 +89,17 @@ main {
 .history {
     row-gap: 5vh;
 
+    figure{
+        > figcaption{
+            padding: 5%;
+            font-size: 20px;
+        }
+    }
+    
     p {
         width: 96%;
     }
+
 
     > article {
         row-gap: 5vh;
@@ -170,16 +182,19 @@ main {
 
     figcaption {
         row-gap: 2vh;
-
+        padding-bottom: 4vh;
+        
         > p {
+           padding-top: 2vh;
+           padding-bottom: 2vh;
             width: 85%;
             padding-left: 9%;
             text-align: left;
-            font-size: 16px;
+            font-size: 20px;
         }
 
         > h4 {
-            font-size: 20px;
+            font-size: 22px;
         }
     }
 
@@ -261,8 +276,8 @@ footer {
     justify-content: space-between;
 
     > a {
-        height: 20vh;
-        width: 20vh;
+        height: 16vh;
+        width: 16vh;
     }
 
     > p {
