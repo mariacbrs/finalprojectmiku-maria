@@ -1,27 +1,14 @@
-nav {
-    background-color: $mariared2;
-    position:fixed;
+*{
+    font-family: 'Playfair Display', serif;
 }
 
-header{
-    background-image: url(/img/cinema.maria.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    h1{
-        color: $mariared3;
-    }
-
-    article{
-        > p{
-            color: white;
-        }
-    }
+p{
+    color: $mariared3;
+    text-align: justify;
 }
 
 .movies,
-.moviments,
+.movements,
 .oscars,
 .palm,
 .actors{
@@ -40,15 +27,201 @@ header{
         > h2{
             color: $mariablack2;
             font-weight: 500;
+            font-size: 30px;
         }
 
         > span{
             display: block;
-            height: 2px;
-            width: 50%;
+            height: 3px;
+            width: 85%;
             background-color: $mariared1;
+            border-radius: 6px;
         }
     } 
-}     
+}
+
+// nav
+
+nav {
+    background-color: $mariared2;
+    position:fixed;
+
+    > details{
+        padding-left: 0;
+        > summary{
+            text-align: center;
+        }
+    }
+}
+
+// header
+
+header{
+    background-image: url(/img/cinema.maria.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1{
+        color: white;
+    }
+
+    article{
+        background-color: rgba(128, 128, 128, 0.705);
+        row-gap: 2vh;
+
+        > p{
+            color: red;
+            font-weight: 500;
+        }
+    }
+}
+
+// movies
+
+.movies {
+    @include directionColumn;
+    row-gap: 2vh;
+
+    > article{
+        width: 90%;
+        padding-left: 5%;
+        @include directionColumn;
+        row-gap: 2vh;
+        
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }   
+}
+
+// movements
+
+.movements{
+    @include directionColumn;
+    row-gap: 2vh;
+    width: 90%;
+    padding-left: 5%;
+
+    > article{
+       @include directionColumn;
+       row-gap: 2vh;  
+    }
+
+    figure{
+        @include directionColumn;
+        row-gap: 2vh;
+        background-color: lightgray;
+        border-radius: 6px;
+        
+        >img{
+            width: 100%;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+    }
+
+    figcaption{
+        padding-top: 2vh;
+        @include directionColumn;
+        row-gap: 1vh;
+        width: 90%;
+        padding-left: 5%;
+        text-align: center;
+
+        > p{
+            color: $mariared2;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        > h3{
+            font-weight: 800;
+            font-size: 18px;
+            color: $mariablack2;
+        }
+    }
+
+}
+
+// oscars, cannes
+
+.oscars,
+.palm{
+    width: 90%;
+    padding-left: 5%;
+    @include directionColumn;
+    row-gap: 2vh;
+    
+    > article{
+        @include directionColumn;
+        row-gap: 2vh; 
+    }
+    
+    p{
+        text-align: left;
+    }
+
+    ul{
+        text-align: center;
+        background-color: rgb(236, 236, 236);
+    }
+
+    li{
+        text-align: left;
+        display: flex;
+        column-gap: 1vh;
+        padding: 2%;
+        font-weight: 500;
+        font-size: 14px;
+
+        > span{
+            color: $mariayellow;
+        }
+      
+    }
+}
+
+// actors
+
+.actors{
+    width: 90%;
+    padding-left: 5%;
+
+    figure{
+        border: 2px solid gray;
+        border-radius: 6px;
+
+        > img{
+            width: 100%;
+           border-radius: 6px;
+        }
+    }
+
+
+    figcaption{
+        padding-top: 2vh;
+        @include directionColumn;
+        row-gap: 1vh;
+        width: 95%;
+        padding-left: 4%;
+        text-align: center;
+
+        > p{
+            color: $mariared1;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        > h4{
+            font-weight: 800;
+            font-size: 18px;
+            color: $maria;
+        }
+    } 
+}
+
+
 
 
