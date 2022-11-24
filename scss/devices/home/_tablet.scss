@@ -1,0 +1,125 @@
+p {
+    text-align: justify;
+    width: 90%;
+}
+
+header {
+    padding-top: 4vh;
+
+    > article {
+        height: 86%;
+        row-gap: 1vh;
+    }
+}
+
+
+.history {
+    aside {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+
+        > figure {
+            width: 40%;
+        }
+
+        figcaption {
+            height: 50%;
+        }
+    }
+}
+
+.vc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    > article:first-child {
+        width: 100%;
+    }
+
+    > p {
+        width: 55%;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    > article {
+        width: 35%;
+    }
+}
+
+.miku {
+
+    > article:nth-child(3) {
+        flex-direction: row;
+        row-gap: 3vh;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        > figure {
+            width: 45%;
+        }
+    }
+
+    span {
+        width: 95%;
+    }
+
+    a {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+.maria {
+
+    aside {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        figure {
+            width: 45%;
+        }
+    }
+
+    span {
+        width: 95%;
+    }
+
+    a {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+.contact {
+    width: 100%;
+
+    aside {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        > span {
+            width: 33%;
+        }
+    }
+
+    span {
+
+        > input {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+    }    
+}
+
+footer {
+    flex-direction: row;
+    justify-content: space-around;
+
+    > p {
+        width: fit-content;
+    }
+}
