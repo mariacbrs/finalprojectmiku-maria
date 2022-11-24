@@ -1,6 +1,8 @@
 
-p{
-    text-align: justify;
+main p{
+    text-align: left;
+    color: dimgray;
+    line-height: 1.1;
 }
 
 .movies,
@@ -21,9 +23,10 @@ p{
         padding-bottom: 1vh;
 
         > h2{
-            // color: $mariablack2;
             font-weight: 500;
-            font-size: 30px;
+            font-size: 26px;
+            text-transform: uppercase;
+            color: black;
         }
 
         > span{
@@ -39,7 +42,6 @@ p{
 // nav
 
 nav {
-    // background-color: $mariared2;
     position:fixed;
 
     > details{
@@ -58,16 +60,10 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 
-    // h1{
-    //     color: white;
-    // }
-
     article{
-        // background-color: rgba(128, 128, 128, 0.705);
         row-gap: 2vh;
 
         > p{
-            // color: red;
             font-weight: 500;
         }
     }
@@ -108,7 +104,7 @@ header{
     figure{
         @include directionColumn;
         row-gap: 2vh;
-        // background-color: lightgray;
+        background-color: lightgray;
         border-radius: 6px;
         
         >img{
@@ -127,15 +123,14 @@ header{
         text-align: center;
 
         > p{
-            // color: $mariared2;
+            color: $homepageRed3;
             font-size: 16px;
             text-align: left;
         }
 
         > h3{
-            font-weight: 800;
-            font-size: 18px;
-            // color: $mariablack2;
+            font-weight: 600;
+            font-size: 20px;
         }
     }
 
@@ -161,7 +156,9 @@ header{
 
     ul{
         text-align: center;
-        // background-color: rgb(236, 236, 236);
+        background-color: $homepageLightgray;
+        border: 2px solid $homepageGray;
+        border-radius: 6px;
     }
 
     li{
@@ -172,9 +169,9 @@ header{
         font-weight: 500;
         font-size: 14px;
 
-        // > span{
-        //     color: $mariayellow;
-        // }
+        > span{
+            color: $homepageRed3;
+        }
       
     }
 }
@@ -194,7 +191,7 @@ header{
 
     figure{
         border: 2px solid gray;
-        // background-color:$homepageLightgray;
+        background-color: $homepageRed2;
         border-radius: 6px;
 
         > img{
@@ -213,15 +210,15 @@ header{
         text-align: center;
 
         > p{
-            // color: $mariared2;
+            color: white;
             font-size: 16px;
             text-align: left;
         }
 
         > h4{
-            font-weight: 800;
+            font-weight: 600;
+            text-transform: uppercase;
             font-size: 18px;
-            // color: $mariablack;
         }
     } 
 
@@ -229,19 +226,21 @@ header{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        // background-color: rgb(236, 236, 236);
+        background-color: $homepageLightgray;
+        border: 2px solid $homepageGray;
+        border-radius: 6px;
 
         li{
             list-style-position: inside;
             padding: 2%;
             padding-right: 0;
             width: 45%;
-            list-style-type:none;
+            list-style-type:square;
         }  
         
-        // span{
-        //     color: $mariayellow;
-        // }
+        span{
+            color: $homepageRed3;
+        }
     }
 
     a{
@@ -252,11 +251,27 @@ header{
 // footer
 
 footer{
-    
-    > p{
-        font-weight: 600;
-    }
+    background-color: $homepageGray;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    @include directionColumn;
+    row-gap: 2vh;
 
+    > a{
+        @include directionColumn;
+        row-gap: 1vh;
+        justify-content: center;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+        background-color: $homepageRed;
+        border-radius: 50%;
+        height: 10vh;
+        width: 10vh;
+    }
 }
 
 
