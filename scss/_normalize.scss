@@ -29,26 +29,3 @@ a {
     cursor: pointer;
 }
 
-.history,
-.maria,
-.contact,
-.vc,
-.miku{
-    @include flexAxisGap(column, center, center, 0, 2vh);
-
-
-    > article{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 2vh;
-        
-
-        > span{
-            display: block;
-            height: 2px;
-            background-color: $homepageRed;
-        }
-    }    
-}
