@@ -1,0 +1,103 @@
+
+// NAV
+nav {
+    height: 8vh;
+    padding: 0;
+
+    > details {
+        display: none;
+    }
+
+    > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        width: 100%;
+        height: 100%;
+
+        > li {
+            display: flex;
+            width: 12%;
+            height: 100%;
+            text-align: center;
+            border-right: 1px solid white;
+        }
+
+        > li:first-child {
+            border-left: 1px solid white;
+        }
+
+        a {
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            color: white;
+            transition: .4s;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            background-color: $homepageGray2;
+            color: $homepageRed;
+        }
+    }
+}
+
+// header
+
+header{
+    height: 46vh;
+
+    > article{
+        height: 92%;
+
+        h1{
+            font-size: 46px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+
+}
+
+// main
+
+.movies,
+.movements,
+.oscars,
+.palm,
+.actors{
+
+    > aside{
+
+        > h2{
+            font-size: 36px;
+        }
+    } 
+}
+
+.gallery{
+    > figure{
+        width: 22vh;
+        height: 16vh;
+    }
+}
+
+.movies > article{
+    align-items: center;
+
+    > p{
+        font-size: 16px;
+        line-height: 1.5;
+    }    
+}
+
+
+
