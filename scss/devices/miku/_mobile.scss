@@ -23,7 +23,7 @@ nav{
             position: absolute;
             width: 88%;
             margin-top: 2vh;
-            background-color: $homepageGray2;
+            background-color: $mikuYellow;
             @include directionColumn;
             list-style-type: none;
         }
@@ -189,6 +189,7 @@ main {
         width: 90%;
         padding: 5%;
         background-color: $mikuYellow;
+        @include background("/img/bg-memo.jpg");
         @include directionColumn;
         row-gap: 2vh;
 
