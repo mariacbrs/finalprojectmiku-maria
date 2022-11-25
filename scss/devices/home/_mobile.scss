@@ -1,9 +1,13 @@
+img{
+    width: 30%;
+}
 
 .history,
 .maria,
 .contact,
 .vc,
 .miku{
+    
 
     h2 {
         font-size: 20px;
@@ -16,25 +20,28 @@
 
 nav{
     display: flex;
+    // justify-content: center;
     padding-top: 1vh;
     padding-bottom: 1vh;
     background-color: $homepageGray;
-    position: fixed;
+    // position: fixed;
     width: 100%;
     z-index: 1;
     
     summary{
         font-size: 28px;
+        color: white;
     }
     
     > details{
-        width: 95%;
+        width: 90%;
         padding-left:5%;
+        padding-right: 5%;
         text-align: center;
 
         > ul{
             position: absolute;
-            width: 88%;
+            width: 90%;
             margin-top: 1vh;
             background-color: $homepageGray2;
             @include directionColumn;
@@ -67,7 +74,6 @@ nav{
 // header
 
 header{
-    padding-top: 2vh;
     display: flex;
     height: 25vh;
     position: relative;
@@ -88,8 +94,7 @@ header{
         @include directionColumn;
         justify-content: center;
         text-align: center;
-        height: 93%;
-        width: 100%;
+        height: 100%;
         align-items: center;
         background-color: rgba(128, 128, 128, 0.536);
 
@@ -106,308 +111,11 @@ header{
 main{
     width: 90%;
     padding-left: 5%;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
 }
 
 // about
 
-
-.miku,
-.maria {
-    a{
-        background-color: $homepageRed2;
-        color: white;
-        text-decoration: none;
-        padding: 2%;
-        text-transform: uppercase;
-    }   
-}
-
-form,
-.miku,
-.maria{
-    > span{
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-    }
-}
-
-.about{
-    @include directionColumn;
-    row-gap: 3vh;
-
-    p{
-        line-height: 1.1;
-    }
-}
-
-// history
-
 .history{
-    aside{
-        @include directionColumn;
-        row-gap: 2vh;
-    }
 
-    figure{
-        @include directionColumn;
-        border: 2px solid $homepageGray2;
-
-        > img{
-            width: 100%;
-        }
-    
-        > figcaption{
-            padding: 2%;
-            color: white;
-            line-height: 1.1;
-            background-color: $homepageRed;
-        }
-    }
 }
-
-.vc{
-    ul{
-        width: 100%;
-        @include directionColumn;
-        row-gap: 1vh;
-    }
-
-    li{
-        list-style-type: none;
-        height: 4vh;
-        background-color: $homepageGray2;
-    }
-    
-    small{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        background-color: $homepageRed3;
-        height: 100%;
-    }
-
-    li:nth-child(1) > small{
-        width: 100%;
-    }
-    li:nth-child(2) > small{
-        width: 75%;
-    }
-    li:nth-child(3) > small{
-        width: 85%;
-    }
-    li:nth-child(4) > small{
-        width: 80%;
-    }
-}
-
-// miku
-
- 
-.miku{
-    padding-top: 3vh;
-
-    figcaption{
-        @include directionColumn;
-        row-gap: 1vh;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        background-color: rgba(128, 128, 128, 0.536);
-        color: white;
-
-        p {
-            width: 80%;
-            color: white;
-        }
-    }
-
-    figure {
-        height: 20vh;
-    }
-
-    figure:nth-child(1) {
-        @include background("/img/anime.jpg");
-    }
-
-    figure:nth-child(2) {
-        @include background("/img/streaming.jpg");
-    }
-
-    figure:nth-child(3) {
-        @include background("/img/broadcast.jpg");
-    }
-
-    figure:nth-child(4) {
-        @include background("/img/tvshow.jpg");
-    }
- 
-}
-
-// maria
-
-.maria{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-
-    aside{
-        @include directionColumn;
-        row-gap: 3vh;  
-    }
-    
-    figure{
-        border-radius: 2%;
-        border: 2px solid $homepageRed3;
-        background-color: $homepageLightgray;
-        @include directionColumn;
-        align-items: center;
-        row-gap: 2vh;
-
-        > img{ 
-            padding: 3%; 
-            width: 20vh;  
-            height: 20vh;
-            border-radius: 50%;
-        }
-        
-    }
-
-    figcaption{
-       @include directionColumn;
-       row-gap: 1vh;
-       text-align: center;
-       padding-bottom: 1vh;
-
-      > h4{
-        color: $homepageRed3; 
-      }
-      
-      > p{
-       width: 90%;
-       padding-left: 5%;
-       line-height: 1.3;
-      }
-    }
-}
-
-// contact
-
-form{
-    @include directionColumn;
-    row-gap: 3vh;
-    padding-top: 2vh;
-    width: 100%;
-
-    
-    > fieldset{
-        padding: 4%;
-    
-        > legend{
-            font-size: 18px;
-            width: 100%;
-            text-align: center;
-        }
-
-        input, textarea{
-            height: 3vh;
-            border: 1px solid $homepageRed2;
-            border-radius: 3px;
-        }
-
-        textarea{
-            resize: none;
-            height: 15vh;
-        }
-
-        select{
-            border: 1px solid $homepageRed2;
-            border-radius: 3px;
-            height: 3vh;
-            background-color: $homepageLightgray;
-        }
- 
-        section{
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-    }
-    
-    aside{
-        @include directionColumn;
-        row-gap: 1vh;
-
-        > label{
-            
-            display: flex;
-            width: 33%;
-            column-gap: 1vh;
-            align-items: center;
-        }
-
-        span{
-            display: flex;
-            column-gap: 1vh;
-            align-items: center;
-        }
-    }
-
-    article{
-        @include directionColumn;
-        row-gap: 1vh;
-        
-        p, > label{
-            color: $homepageRed;
-        }
-
-        > span{
-            display: flex;
-            align-items: center;
-            column-gap: 1vh;
-        }
-    }
-
-    > span{
-        height: 4vh;
-
-        input{
-            background-color: $homepageRed2;
-            color: white;
-            text-decoration: none;
-            padding: 2%;
-            text-transform: uppercase;
-            border: none;
-        }
-    }
-}
-
-// footer
-
-footer{
-    background-color: $homepageGray;
-    color: white;
-    align-items: center;
-    text-align: center;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    @include directionColumn;
-    row-gap: 2vh;
-
-    > a{
-        @include directionColumn;
-        row-gap: 1vh;
-        justify-content: center;
-        font-size: 14px;
-        text-decoration: none;
-        color: white;
-        background-color: $homepageRed;
-        border-radius: 50%;
-        height: 10vh;
-        width: 10vh;
-    }
-}
-
 
