@@ -1,0 +1,225 @@
+nav {
+    height: 8vh;
+    padding: 0;
+
+    > details {
+        display: none;
+    }
+
+    > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        width: 100%;
+        height: 100%;
+
+        > li {
+            display: flex;
+            width: 15%;
+            height: 100%;
+            text-align: center;
+            border-right: 1px solid white;
+        }
+
+        > li:first-child {
+            border-left: 1px solid white;
+        }
+
+        a {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            color: white;
+            transition: .4s;
+        }
+
+        a:hover {
+            background-color: $homepageGray2;
+            color: $homepageRed;
+        }
+    }
+}
+
+header {
+    height: 45vh;
+
+    > article {
+        height: 90%;
+        row-gap: .7vh;
+
+        h1 {
+            font-size: 45px;
+        }
+    
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: whitesmoke;
+        }
+    }    
+}
+
+main {
+    row-gap: 10vh;
+    padding-top: 10vh;
+
+    > a {
+        height: 10vh;
+        width: 10vh;
+    }
+}
+
+h3 {
+    font-size: $h3FontSizeDesktop;
+}
+
+p {
+    font-size: $pFontSizeDesktop;
+}
+
+.anime {
+
+    width: 80%;
+    row-gap: 5vh;
+
+    > section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h4 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.tvshow {
+    width: 80%;
+
+    > figure {
+        width: 25%;
+        padding: 3%;
+        height: 48vh;
+
+        > img {
+            height: 24vh;
+        }
+
+        h5 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 19px;
+        }
+
+    }
+}
+
+.recommendation {
+    width: 80%;
+
+    > section {
+        h5 {
+            font-size: 22px;
+        }
+
+        h6 {
+            font-size: 20px;
+        }
+
+        li {
+            font-size: 18px;
+        }
+    }
+
+    }
+
+   
+
+.streaming {
+
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+
+    > section {
+        width: 70%;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    > article {
+        width: 20%;
+        
+        > a {
+            width: 100%;
+            font-size: 18px;
+
+            &:hover {
+                background-color: white;
+                border: 2px solid white;
+                color: $homepageRed;
+            }
+        }
+    }
+
+    
+}
+
+.vs {
+
+    > h3 {
+        padding: 2%;
+        border-radius: 50px;
+        width: 76%;
+    }
+
+    > p {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    > section {
+        width: 80%;
+        padding-bottom: 7vh;
+
+        h4 {
+            font-size: 22px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        li {
+            font-size: 18px;
+        }
+    }
+
+    > article {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
