@@ -1,0 +1,280 @@
+
+main p{
+    text-align: left;
+    color: dimgray;
+    line-height: 1.1;
+}
+
+.movies,
+.movements,
+.oscars,
+.palm,
+.actors{
+    @include directionColumn;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    > aside{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1vh;
+        padding-bottom: 1vh;
+
+        > h2{
+            font-weight: 500;
+            font-size: 26px;
+            text-transform: uppercase;
+            color: black;
+        }
+
+        > span{
+            display: block;
+            height: 3px;
+            width: 85%;
+            background-color: $homepageRed;
+            border-radius: 6px;
+        }
+    } 
+}
+
+// nav
+
+nav {
+    position:fixed;
+
+    > details{
+        > summary{
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+}
+
+// header
+
+header{
+    background-image: url(/img/cinema.maria.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    article{
+        row-gap: 2vh;
+
+        > p{
+            font-weight: 500;
+        }
+    }
+}
+
+// movies
+
+.movies {
+    @include directionColumn;
+    row-gap: 2vh;
+    width: 90%;
+    padding-left: 5%;
+
+    > article{
+        
+        @include directionColumn;
+        row-gap: 2vh;
+        
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }   
+}
+
+// movements
+
+.movements{
+    @include directionColumn;
+    row-gap: 2vh;
+    width: 90%;
+    padding-left: 5%;
+
+    > article{
+       @include directionColumn;
+       row-gap: 2vh;  
+    }
+
+    figure{
+        @include directionColumn;
+        row-gap: 2vh;
+        background-color: lightgray;
+        border-radius: 6px;
+        
+        >img{
+            width: 100%;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+    }
+
+    figcaption{
+        padding-top: 2vh;
+        @include directionColumn;
+        row-gap: 1vh;
+        width: 90%;
+        padding-left: 5%;
+        text-align: center;
+
+        > p{
+            color: $homepageRed3;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        > h3{
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+
+}
+
+// oscars, cannes
+
+.oscars,
+.palm{
+    width: 90%;
+    padding-left: 5%;
+    @include directionColumn;
+    row-gap: 2vh;
+    
+    > article{
+        @include directionColumn;
+        row-gap: 2vh; 
+    }
+    
+    p{
+        text-align: left;
+    }
+
+    ul{
+        text-align: center;
+        background-color: $homepageLightgray;
+        border: 2px solid $homepageGray;
+        border-radius: 6px;
+    }
+
+    li{
+        text-align: left;
+        display: flex;
+        column-gap: 1vh;
+        padding: 2%;
+        font-weight: 500;
+        font-size: 14px;
+
+        > span{
+            color: $homepageRed3;
+        }
+      
+    }
+}
+
+// actors
+
+.actors{
+    @include directionColumn;
+    row-gap: 2vh;
+    width: 90%;
+    padding-left: 5%;
+
+    > article{
+        @include directionColumn;
+        row-gap: 2vh;
+    }
+
+    figure{
+        border: 2px solid gray;
+        background-color: $homepageRed2;
+        border-radius: 6px;
+
+        > img{
+            width: 100%;
+           border-radius: 6px;
+        }
+    }
+
+    figcaption{
+        padding-top: 2vh;
+        @include directionColumn;
+        row-gap: 1vh;
+        width: 95%;
+        padding-left: 4%;
+        padding-bottom: 2vh;
+        text-align: center;
+
+        > p{
+            color: white;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        > h4{
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    } 
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: $homepageLightgray;
+        border: 2px solid $homepageGray;
+        border-radius: 6px;
+
+        li{
+            list-style-position: inside;
+            padding: 2%;
+            padding-right: 0;
+            width: 45%;
+            list-style-type:square;
+        }  
+        
+        span{
+            color: $homepageRed3;
+        }
+    }
+
+    a{
+        color: $homepageRed2;
+    }
+}
+
+// footer
+
+footer{
+    background-color: $homepageGray;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    @include directionColumn;
+    row-gap: 2vh;
+
+    > a{
+        @include directionColumn;
+        row-gap: 1vh;
+        justify-content: center;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+        background-color: $homepageRed;
+        border-radius: 50%;
+        height: 10vh;
+        width: 10vh;
+    }
+}
+
+
+
+
