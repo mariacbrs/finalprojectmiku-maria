@@ -66,3 +66,12 @@ main > a {
         }
     }
 }
+
+footer {
+    flex-direction: row;
+    justify-content: space-around;
+
+    > p {
+        width: fit-content;
+    }
+}

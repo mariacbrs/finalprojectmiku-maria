@@ -104,7 +104,7 @@ main {
     row-gap: 5vh;
     align-items: center;
     padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
 }
 
 // ANIME
@@ -356,15 +356,28 @@ main > a {
 }
 
 // FOOTER
-footer{
+footer {
     background-color: $homepageGray;
     color: white;
     align-items: center;
     text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     @include directionColumn;
     row-gap: 2vh;
+
+    > a{
+        @include directionColumn;
+        row-gap: 1vh;
+        justify-content: center;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+        background-color: $homepageRed;
+        border-radius: 50%;
+        height: 10vh;
+        width: 10vh;
+    }
 }
 
 @keyframes rotation{
