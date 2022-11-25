@@ -162,6 +162,8 @@ form,
 .about{
     @include directionColumn;
     row-gap: 3vh;
+    padding-left: 5%;
+    padding-right: 5%;
 
     p{
         line-height: 1.1;
@@ -233,8 +235,10 @@ form,
 
  
 .miku{
-    width: 100%;
+    width: 90%;
     padding-top: 3vh;
+    padding-left: 5%;
+    padding-right: 5%;
 
     figcaption{
         @include directionColumn;
@@ -276,6 +280,8 @@ form,
 // maria
 
 .maria{
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 2vh;
     padding-bottom: 2vh;
 
@@ -321,7 +327,12 @@ form,
 
 // contact
 
+.contact {
+    width: 90%;
+}
+
 form{
+    
     @include directionColumn;
     row-gap: 3vh;
     padding-top: 2vh;
